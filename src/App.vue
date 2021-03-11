@@ -1,17 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="w-1/2 mx-auto">
+    <h1 class="text-3xl text-left pb-2">Rangordna genom slider</h1>
+    <SliderRanking class="mb-20"/>
+    <h1 class="text-3xl text-left pb-2">Rangordna genom dra och släpp</h1>
+    <DragRanking class="mb-20"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SliderRanking from './components/SliderRanking.vue'
+import DragRanking from './components/DragRanking.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SliderRanking,
+    DragRanking
   }
 }
 </script>
